@@ -51,6 +51,22 @@ int is_operator(char *token);
 int is_symbol(char ch);
 
 /*----------------------------------------------------------
+ * Error Handling Functions
+ *---------------------------------------------------------*/
+void report_invalid_token(char *token);
+
+/*----------------------------------------------------------
+ * Symbol Table Functions
+ *---------------------------------------------------------*/
+void add_to_symbol_table(char *identifier);
+void display_symbol_table(void);
+
+/*----------------------------------------------------------
+ * Statistics Functions
+ *---------------------------------------------------------*/
+void display_statistics(void);
+
+/*----------------------------------------------------------
  * File Processing Functions
  *---------------------------------------------------------*/
 void process_file(FILE *fp);
